@@ -1,0 +1,13 @@
+@font-face {
+  font-family: cocogoose;
+  src: url(fonts/Cocogoose-font.otf);
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
