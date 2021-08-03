@@ -2,7 +2,7 @@
 const data = [
   {
     id: 1,
-    pic: './assets/image-1.jpeg',
+    pic: './assets/image-1.png',
     altText: 'This is featured speaker image',
     nameOfSpeaker: 'Chamath',
     designation: 'Canadian venture capitalist',
@@ -10,7 +10,7 @@ const data = [
   },
   {
     id: 2,
-    pic: './assets/image-2.jpeg',
+    pic: './assets/image-2.png',
     altText: 'This is featured speaker image',
     nameOfSpeaker: 'Travis',
     designation: 'Uber Founder',
@@ -18,7 +18,7 @@ const data = [
   },
   {
     id: 3,
-    pic: './assets/image-3.jpeg',
+    pic: './assets/image-3.png',
     altText: 'This is featured speaker image',
     nameOfSpeaker: 'Peter Thiel',
     designation: 'Former founder of PayPal',
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 4,
-    pic: './assets/image-4.jpg',
+    pic: './assets/image-4.png',
     altText: 'This is featured speaker image',
     nameOfSpeaker: 'Chamath',
     designation: 'Canadian venture capitalist',
@@ -34,7 +34,7 @@ const data = [
   },
   {
     id: 5,
-    pic: './assets/image-5.jpeg',
+    pic: './assets/image-5.png',
     altText: 'This is featured speaker image',
     nameOfSpeaker: 'David Sacks',
     designation: 'Canadian venture capitalist',
@@ -42,7 +42,7 @@ const data = [
   },
   {
     id: 6,
-    pic: './assets/image-6.jpeg',
+    pic: './assets/image-6.png',
     altText: 'This is featured speaker image',
     nameOfSpeaker: 'Toni',
     designation: 'Shopify Founder',
@@ -67,9 +67,17 @@ const speakerContainer = document.createElement('section');
 speakerContainer.setAttribute('class', 'featured-speakers');
 speakerContainer.setAttribute('id', 'speakers');
 
+// const sectHeading = document.createElement('h2');
+// sectHeading.setAttribute('class', 'feature-heading');
+// sectHeading.textContent ='Featured Speakers';
+
+// speakerContainer.appendChild(sectHeading);
+
+
 data.forEach((speakerPara)=> {
 
 // for(let i=0; i < )
+  
   
   const speakerSection = document.createElement('div');
   speakerSection.setAttribute('class', 'speaker-section');
@@ -77,6 +85,10 @@ data.forEach((speakerPara)=> {
 
   const imageSection = document.createElement('div');
   imageSection.setAttribute('class', 'speaker-image-section');
+  
+  // const imagebg = document.createElement('i');
+  // imagebg.setAttribute('class', 'fas fa-chess-board');
+  // speakerSection.appendChild(imagebg);
 
   const image = document.createElement('img');
   image.setAttribute('class', 'speaker-image');
@@ -99,6 +111,11 @@ data.forEach((speakerPara)=> {
   speakerDesignation.setAttribute('class','speaker-designation');
   speakerDesignation.textContent = speakerPara.designation;
   contentSection.appendChild(speakerDesignation);
+
+  const dotText = document.createElement('p');
+  dotText.setAttribute('id', 'dots');
+  dotText.textContent = ".........";
+  contentSection.appendChild(dotText);
 
   const speakerHistory =document.createElement('p')
   speakerHistory.setAttribute('class','speaker-history');
