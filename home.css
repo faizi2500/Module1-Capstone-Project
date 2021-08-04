@@ -12,6 +12,9 @@ body {
   font-family: 'lato', sans-serif;
 }
 
+p {
+  line-height: 1.5rem;
+}
 .menu-content {
   display: none;
 }
@@ -22,19 +25,12 @@ body {
   display: none;
 }
 
-/* header {
-  /* background-color: #eaeaea; */
-  /* min-height: 30rem; 
-}*/
-
-
 .navigation-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   width: 95%;
-  /* position: fixed; */
 }
 
 .nav-toggle {
@@ -188,8 +184,6 @@ h3 {
 
 .venue {
   font-size: 1.12rem;
-  position: relative;
-  bottom: 35px;
 }
 
 /* second-section styling */
@@ -411,10 +405,16 @@ footer {
 
 
 @media only screen and (min-width: 768px) {
-
-  /* Tob Black Bar Styled */
   .nav-toggle {
     display: none;
+  }
+
+  p {
+    line-height: 1.3rem
+  }
+
+  hr {
+    width: 5%
   }
 
   .top-bar-section {
@@ -434,98 +434,13 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-block: 0;
-
   }
 
   .top-bar li {
-    /* width: 6%; */
     color: white;
     font-size: 0.7rem;
     position: relative;
-    /* top: -0.7rem; */
   }
-
-  /* .navigation-container {
-    position: relative;
-    top: -15px
-  }
-
-
-  .menu-content {
-    display: block;
-    width: 90%;
-    margin-inline: auto;
-  }
-
-  .menu-items {
-    margin-block: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo-desktop a {
-    text-decoration: none;
-    font-size: 3rem;
-    color: black;
-  }
-
-  .logo-desktop {
-    cursor: pointer;
-    flex-grow: 2;
-    margin-right: 5%;
-  } */
-
-  /* .logo-desktop a:hover {
-    color: #ec5242;
-    font-size: 3.25rem;
-  }
-
-  .web-pages a{
-    text-decoration: none;
-    color: black;
-  }
-
-  .web-pages a:hover {
-    color: #ec5242;
-    border: 1px solid #ec5242;
-    background-color: #f7f7f8;
-    font-size: 1.3rem;
-    padding-inline: 15%;
-    padding-block: 8%;
-  }
-
-  .web-pages {
-    flex-grow: 1;
-  }
-
-  .company-name {
-    flex-grow: 2;
-    margin-left: 5%;
-  }
-
-  .company-name a {
-    text-decoration: none;
-    border: 2px solid #ec5242;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ec5242;
-    letter-spacing: 2px;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem
-  }
-
-  .company-name a:hover {
-    font-size: 1.8rem;
-    margin-left: 5%;
-    border-color: black;
-  } */
-
-  /* Navigation done again */
-
-  /* First Section Styling */
 
   header {
     background-color: #eaeaea;
@@ -695,20 +610,20 @@ footer {
   }
 
   .program-button {
-    display: none;
+    display: block;
   }
 
   .button-container {
-    display: none;
+    width: 30%;
   }
 
-  .desktop-container-link {
+  /* .desktop-container-link {
     display: block;
     width: 20%;
     margin-inline: auto;
     min-height: 2rem;
     margin-block: 5%;
-  }
+  } */
 
 
   .program-link {

@@ -12,20 +12,120 @@ body {
   font-family: 'lato', sans-serif;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 .menu-content {
   display: none;
 }
-
 
 .top-bar-section {
   background-color: black;
   display: none;
 }
 
-.hamburger {
+.navigation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 95%;
+}
+
+.nav-toggle {
   position: absolute;
-  top: 3%;
-  margin-left: 5%;
+  top: 1rem;
+  cursor: pointer;
+  left: 1rem;
+}
+
+.close-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.close-menu p{
+  font-size: 3.2rem;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 1.3rem;
+}
+
+
+.logo-desktop a{
+  display: none;
+  position: absolute;
+  top: 1.3rem;
+  right: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.pages-menu {
+  width: 100%;
+  display: none;
+  height: 80vh;
+  background-color: rgb(234, 234, 234, 0.7); 
+  border-right: 4px outset #ec5242;
+  border-bottom: 2px outset #ec5242;
+}
+
+.open {
+  height: 100vh;
+}
+
+.menu-items {
+  padding: 0;
+  margin-top: 8rem;
+}
+
+.menu-items li {
+  display: block;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+
+.web-pages a{
+  text-decoration: none;
+  color: black;
+  font-size:  1.3rem;
+}
+
+.web-pages a:hover {
+  color: #ec5242;
+  border-bottom: 1px solid #ec5242;
+  background-color: #f7f7f8;
+  font-size: 1.2rem;
+  padding-inline: 11%;
+  padding-block: 5%;
+}
+
+.home-page a{
+  text-decoration: none;
+  color: black;
+  font-size:  1.3rem;
+}
+
+.home-page a:hover {
+  color: #ec5242;
+  border-bottom: 1px solid #ec5242;
+  background-color: #f7f7f8;
+  font-size: 1.2rem;
+  padding-inline: 11%;
+  padding-block: 5%;
+
+}
+
+.company-name {
+  display: none;
+}
+
+.company-name a {
+  text-decoration: none;
+  color: black;
 }
 
 .fa-bars {
@@ -136,9 +236,10 @@ hr {
   display: block;
   margin-inline: auto;
   margin-block: 10%;
+  cursor: pointer;
 }
 
-.partners-section {
+/* .partners-section {
   background-color: #3f444f;
 }
 
@@ -169,10 +270,11 @@ hr {
 .partner-image {
   width: 125px;
   height: 40px;
-}
+} */
 
 footer {
   min-height: 5rem;
+  background-color: black;
 }
 
 .footer-flex {
@@ -186,15 +288,16 @@ footer {
 }
 
 .footer-logo a {
+  color: #fff;
   font-size: 2rem;
   font-weight: 800;
   text-decoration: none;
-  color: black;
 }
 
 .copy-right {
   font-size: 1rem;
   margin: 0;
+  color: #fff;
 }
 
 .desktop-para {
@@ -202,14 +305,21 @@ footer {
 }
 
 @media only screen and (min-width: 768px)  {
-  .hamburger {
+  .nav-toggle {
     display: none;
+  }
+
+  p {
+    line-height: 1.3rem;
+  }
+
+  hr {
+    width: 5%;
   }
 
   .top-bar-section {
     display: block;
     position: relative;
-    top: -1rem;
   }
   
   .top-bar-container {
@@ -223,57 +333,83 @@ footer {
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    height: 10%;
+    margin-block: 0;
   }
 
   .top-bar li {
-    /* width: 6%; */
     color: white;
     font-size: 0.7rem;
     position: relative;
-    /* top: -0.7rem; */
+  }
+
+  header {
+    background-color: #eaeaea;
   }
 
   .navigation-container {
-    position: relative;
-    top: -15px
-  }
-
-
-  .menu-content {
-    display: block;
-    width: 90%;
-    margin-inline: auto;
-  }
-
-  .menu-items {
-    margin-block: 0;
-    list-style: none;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: unset;
   }
 
-  .logo-desktop a {
-    text-decoration: none;
-    font-size: 3rem;
-    color: black;
-  }
-
-  .logo-desktop {
-    cursor: pointer;
-    flex-grow: 2;
-    margin-right: 5%;
-  }
-
-  .logo-desktop a:hover {
+  .logo-desktop a{
+    position: unset;
+    display: block;
     color: #ec5242;
     font-size: 3.25rem;
   }
 
-  .web-pages a{
+
+  .logo-desktop {
+    cursor: pointer;
+  }
+
+  .logo-desktop a:hover {
+    color: #ec5242;
+    font-size: 3.5rem;
+  }
+
+  .pages-menu {
+    width: unset;
+    display: block;
+    height: unset;
+    border: none;
+  }
+
+  .menu-items {
+    margin: 0;
+  }
+
+  .menu-items li {
+    display: inline-block;
+    padding: 0 1.25rem;
+  }
+
+  .company-name {
+    display: block;
+  }
+
+  .logo-desktop a {
     text-decoration: none;
     color: black;
+  }
+
+  .home-page a {
+    display: none;
+  }
+
+  .web-pages a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .web-image img{
+    display: none;
   }
 
   .web-pages a:hover {
@@ -289,11 +425,6 @@ footer {
     flex-grow: 1;
   }
 
-  .company-name {
-    flex-grow: 2;
-    margin-left: 5%;
-  }
-
   .company-name a {
     text-decoration: none;
     border: 2px solid #ec5242;
@@ -307,8 +438,7 @@ footer {
   }
 
   .company-name a:hover {
-    font-size: 1.8rem;
-    margin-left: 5%;
+    font-size: 1.6rem;
     border-color: black;
   }
 
@@ -420,7 +550,3 @@ footer {
   }
 
 }
-
-
-
-

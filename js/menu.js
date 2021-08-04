@@ -1,10 +1,9 @@
-
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close');
 const menu = document.getElementById('mob-nav');
 const logo = document.getElementsByClassName('logo-desktop')
 const navWidth =document.getElementsByClassName('navigation-container');
-var w = document.documentElement.clientWidth || window.innerWidth;
+
 const status = false;
 
 
@@ -25,17 +24,6 @@ function closeMobileMenu() {
   closeMenu.style.display = 'none'
 }
 
-function menuCondition () {
-  if (w < 768 && status === false) {
-    openMobileMenu();
-  } else closeMobileMenu;
-}
-
-
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
-
-menuCondition()
-
-
 
