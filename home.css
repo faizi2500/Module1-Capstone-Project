@@ -33,7 +33,7 @@ body {
 }
 
 .first-section {
-  background: url(/assets/first-section.png);
+  background: url(assets/first-section.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
