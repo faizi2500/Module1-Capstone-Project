@@ -9,16 +9,16 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 p {
   line-height: 1.5rem;
 }
+
 .menu-content {
   display: none;
 }
-
 
 .top-bar-section {
   background-color: black;
@@ -45,7 +45,7 @@ p {
   cursor: pointer;
 }
 
-.close-menu p{
+.close-menu p {
   font-size: 3.2rem;
   position: absolute;
   margin: 0;
@@ -53,8 +53,7 @@ p {
   left: 1.3rem;
 }
 
-
-.logo-desktop a{
+.logo-desktop a {
   display: none;
   position: absolute;
   top: 1.3rem;
@@ -67,7 +66,7 @@ p {
   width: 100%;
   display: none;
   height: 80vh;
-  background-color: rgb(234, 234, 234, 0.7); 
+  background-color: rgb(234, 234, 234, 0.7);
   border-right: 4px outset #ec5242;
   border-bottom: 2px outset #ec5242;
 }
@@ -87,11 +86,10 @@ p {
   padding: 1.5rem 0;
 }
 
-
-.web-pages a{
+.web-pages a {
   text-decoration: none;
   color: black;
-  font-size:  1.3rem;
+  font-size: 1.3rem;
 }
 
 .web-pages a:hover {
@@ -103,10 +101,10 @@ p {
   padding-block: 5%;
 }
 
-.home-page a{
+.home-page a {
   text-decoration: none;
   color: black;
-  font-size:  1.3rem;
+  font-size: 1.3rem;
 }
 
 .home-page a:hover {
@@ -116,7 +114,6 @@ p {
   font-size: 1.2rem;
   padding-inline: 11%;
   padding-block: 5%;
-
 }
 
 .company-name {
@@ -127,8 +124,6 @@ p {
   text-decoration: none;
   color: black;
 }
-
-
 
 /* .hamburger {
   position: absolute;
@@ -146,7 +141,6 @@ p {
   background-position: center;
 }
 
-
 .first-section-container {
   width: 92.5%;
   padding-top: 7rem;
@@ -158,11 +152,11 @@ p {
   margin-top: 5%;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #ec5242 ;
+  color: #ec5242;
 }
 
 .open-heading {
-  font-family: 'cocogoose';
+  font-family: "cocogoose";
   font-size: 3rem;
   color: #ec5242;
   margin: 0;
@@ -179,7 +173,7 @@ p {
 h3 {
   font-family: cocogoose;
   font-size: 1.84rem;
-  color: #504f4f
+  color: #504f4f;
 }
 
 .venue {
@@ -188,14 +182,13 @@ h3 {
 
 /* second-section styling */
 
-.second-section{
+.second-section {
   background-image: url(assets/repeat-bg.png);
   background-repeat: repeat;
   background-position: center;
-  
+
   /* margin: 0; */
 }
-
 
 .program-list {
   width: 92.5%;
@@ -216,13 +209,13 @@ hr {
   margin-inline: auto;
   border: none;
   height: 3px;
-  background:#ec5242;
+  background: #ec5242;
 }
 
 .flex-box {
   display: flex;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   background-color: #393c43b3;
   margin-block: 5%;
   color: white;
@@ -248,7 +241,7 @@ hr {
 .flex-box p {
   font-size: 0.9rem;
   margin-left: 2%;
-  width: 60%
+  width: 60%;
 }
 
 .button-container {
@@ -311,7 +304,7 @@ hr {
   width: 128px;
   height: 128px;
   align-self: center;
-  justify-self: center;  
+  justify-self: center;
   margin-block: auto;
   z-index: 2;
 }
@@ -356,7 +349,8 @@ hr {
 }
 
 .partners-list img {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg) brightness(102%) contrast(105%);
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(311deg)
+    brightness(102%) contrast(105%);
   margin-block: 10%;
 }
 
@@ -403,29 +397,27 @@ footer {
   margin: 0;
 }
 
-
 @media only screen and (min-width: 768px) {
   .nav-toggle {
     display: none;
   }
 
   p {
-    line-height: 1.3rem
+    line-height: 1.3rem;
   }
 
   hr {
-    width: 5%
+    width: 5%;
   }
 
   .top-bar-section {
     display: block;
     position: relative;
   }
-  
+
   .top-bar-container {
     width: 40%;
     margin-left: auto;
-
   }
 
   .top-bar {
@@ -457,18 +449,17 @@ footer {
     position: unset;
   }
 
-  .logo-desktop a{
+  .logo-desktop a {
     position: unset;
     display: block;
     color: #ec5242;
     font-size: 3.25rem;
   }
 
-
   .logo-desktop {
     cursor: pointer;
   }
-  
+
   .logo-desktop a:hover {
     color: #ec5242;
     font-size: 3.5rem;
@@ -508,7 +499,7 @@ footer {
     color: black;
   }
 
-  .web-image img{
+  .web-image img {
     display: none;
   }
 
@@ -534,14 +525,14 @@ footer {
     color: #ec5242;
     letter-spacing: 2px;
     padding-inline: 0.5rem;
-    padding-block: 0.5rem
+    padding-block: 0.5rem;
   }
 
   .company-name a:hover {
     font-size: 1.6rem;
     border-color: black;
   }
-  
+
   .first-section {
     background-position: center;
   }
@@ -562,7 +553,7 @@ footer {
     text-align: left;
     margin-top: 0;
     padding-inline: 1rem;
-    padding-block: 0.75rem; 
+    padding-block: 0.75rem;
     margin-top: 2%;
   }
 
@@ -625,7 +616,6 @@ footer {
     margin-block: 5%;
   } */
 
-
   .program-link {
     color: white;
     margin-block: 2rem;
@@ -644,7 +634,6 @@ footer {
     grid-template-columns: 0.5fr 0.5fr;
   }
 
-
   .speaker-history {
     width: 95%;
   }
@@ -654,13 +643,13 @@ footer {
     margin-bottom: 1%;
   }
 
-  .partners-flex{
+  .partners-flex {
     margin-top: 4%;
     width: 75%;
   }
 
   .partners-list {
-    margin-bottom: 3%
+    margin-bottom: 3%;
   }
 
   .partners-image {
@@ -670,6 +659,4 @@ footer {
   .footer-flex {
     justify-content: space-evenly;
   }
-
-
 }
