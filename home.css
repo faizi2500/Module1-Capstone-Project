@@ -33,7 +33,7 @@ body {
 }
 
 .first-section {
-  background: url(assets/first-section.png);
+  background-image: url(assets/first-section.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +84,7 @@ h3 {
 /* second-section styling */
 
 .second-section{
-  background: url(assets/repeat-bg.png);
+  background-image: url(assets/repeat-bg.png);
   background-repeat: repeat;
   background-position: center;
   
