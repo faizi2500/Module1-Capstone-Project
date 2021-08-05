@@ -21,7 +21,7 @@ p {
 }
 
 .top-bar-section {
-  background-color: black;
+  background-color: #3e3e3e;
   display: none;
 }
 
@@ -292,26 +292,28 @@ footer {
   }
 
   .top-bar-container {
-    width: 40%;
-    margin-left: auto;
+    width: 85%;
+    margin: auto;
   }
 
   .top-bar {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     margin-block: 0;
+    padding-left: 0;
   }
 
   .top-bar li {
     color: white;
     font-size: 0.7rem;
-    position: relative;
+    padding-inline: 0.8%;
+    cursor: pointer;
   }
 
   header {
-    background-color: #eaeaea;
+    background-color: #fff;
     height: 3rem;
   }
 
@@ -372,15 +374,17 @@ footer {
 
   .pages-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     height: unset;
     border: none;
     position: unset;
+    background-color: #fff;
   }
 
   .menu-items {
-    margin: 0;
+    margin-block: 0;
+    margin-right: 4rem;
   }
 
   .menu-items li {
