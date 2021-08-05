@@ -144,7 +144,7 @@ p {
 }
 
 .first-section {
-  background: url(/assets/first-section.png);
+  background: url(assets/first-section.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -484,8 +484,6 @@ footer {
     margin-inline: 2.4%;
     margin-block: 5%;
   }
-
-  /* footer styling */
 
   .partners-section {
     display: none;
