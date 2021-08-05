@@ -200,7 +200,7 @@ h3 {
 }
 
 .program-list {
-  width: 92.5%;
+  width: 95%;
   margin-inline: auto;
   margin-top: 10%;
 }
@@ -226,7 +226,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   background-color: #393c43b3;
-  margin-block: 5%;
+  margin-block: 2.5%;
   color: white;
 }
 
@@ -248,8 +248,7 @@ hr {
 
 .flex-box p {
   font-size: 0.9rem;
-  margin-left: 2%;
-  width: 60%;
+  margin-left: 5%;
 }
 
 .button-container {
@@ -257,6 +256,7 @@ hr {
   margin-inline: auto;
   height: 70px;
   margin-block: 5%;
+  padding-block: 7%;
 }
 
 .program-button {
@@ -562,9 +562,10 @@ footer {
 
   /* Second Section */
 
-  .second-section {
+  /* .second-section {
+    min-height: 480px;
     height: auto;
-  }
+  } */
 
   .second-section-heading {
     padding-top: 2%;
@@ -587,7 +588,7 @@ footer {
 
   .flex-box img {
     transform: scale(0.3);
-    width: 50%;
+    width: 60%;
     height: unset;
   }
 
@@ -595,7 +596,7 @@ footer {
     width: 95%;
     margin: 0;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .flex-box p {
@@ -604,15 +605,17 @@ footer {
     margin: 0;
     margin-top: 3%;
     margin-bottom: 9%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .program-button {
     display: block;
+    margin-bottom: 15px;
   }
 
   .button-container {
     width: 30%;
+    padding-block: 2%;
   }
 
   /* .desktop-container-link {
