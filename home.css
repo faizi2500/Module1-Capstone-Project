@@ -16,7 +16,10 @@ p {
   line-height: 1.1rem;
 }
 
-.menu-content, .top-bar-section, .close-menu, .logo-desktop a {
+.menu-content,
+.top-bar-section,
+.close-menu,
+.logo-desktop a {
   display: none;
 }
 
@@ -308,6 +311,7 @@ hr {
 .speaker-image {
   width: 128px;
   height: 128px;
+
   /* align-self: center;
   justify-self: center;
   margin-block: auto;
@@ -504,7 +508,6 @@ footer {
   .menu-items {
     margin-block: 0;
     margin-right: 4rem;
-
   }
 
   .menu-items li {
