@@ -86,10 +86,32 @@ p {
   padding: 1.5rem 0;
 }
 
+.home-page a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
 .web-pages a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
+}
+
+.company-name {
+  display: none;
+}
+
+.company-name a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-logo a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .web-pages a:hover {
@@ -101,12 +123,6 @@ p {
   padding-block: 5%;
 }
 
-.home-page a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.3rem;
-}
-
 .home-page a:hover {
   color: #ec5242;
   border-bottom: 1px solid #ec5242;
@@ -114,15 +130,6 @@ p {
   font-size: 1.2rem;
   padding-inline: 11%;
   padding-block: 5%;
-}
-
-.company-name {
-  display: none;
-}
-
-.company-name a {
-  text-decoration: none;
-  color: black;
 }
 
 .fa-bars {
@@ -249,13 +256,6 @@ footer {
   margin: auto;
 }
 
-.footer-logo a {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-  text-decoration: none;
-}
-
 .copy-right {
   font-size: 1rem;
   margin: 0;
@@ -323,15 +323,15 @@ footer {
     display: block;
     color: #ec5242;
     font-size: 3.25rem;
+    text-decoration: none;
+  }
+
+  .home-page a {
+    display: none;
   }
 
   .logo-desktop {
     cursor: pointer;
-  }
-
-  .logo-desktop a:hover {
-    color: #ec5242;
-    font-size: 3.5rem;
   }
 
   .pages-menu {
@@ -354,15 +354,6 @@ footer {
     display: block;
   }
 
-  .logo-desktop a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .home-page a {
-    display: none;
-  }
-
   .web-pages a {
     text-decoration: none;
     color: black;
@@ -370,6 +361,27 @@ footer {
 
   .web-image img {
     display: none;
+  }
+
+  .company-name a {
+    text-decoration: none;
+    border: 2px solid #ec5242;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ec5242;
+    letter-spacing: 2px;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+  }
+
+  .footer-logo a {
+    color: white;
+  }
+
+  .logo-desktop a:hover {
+    color: #ec5242;
+    font-size: 3.5rem;
   }
 
   .web-pages a:hover {
@@ -383,18 +395,6 @@ footer {
 
   .web-pages {
     flex-grow: 1;
-  }
-
-  .company-name a {
-    text-decoration: none;
-    border: 2px solid #ec5242;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ec5242;
-    letter-spacing: 2px;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem;
   }
 
   .company-name a:hover {
@@ -436,7 +436,6 @@ footer {
   .logo-container {
     width: 30%;
     background-color: rgb(211, 211, 211, 0.1);
-    /* s */
   }
 
   .logo-container img {
@@ -502,10 +501,6 @@ footer {
   }
 
   .copy-right {
-    color: white;
-  }
-
-  .footer-logo a {
     color: white;
   }
 }
