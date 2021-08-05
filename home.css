@@ -656,16 +656,13 @@ footer {
 
   .speaker-history {
     margin: 0;
+    width: 95%;
   }
 
   .featured-speakers {
     width: 85%;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
-  }
-
-  .speaker-history {
-    width: 95%;
   }
 
   /* partners section */
