@@ -30,7 +30,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 95%;
+  width: 100%;
 }
 
 .nav-toggle {
@@ -43,14 +43,17 @@ p {
 .close-menu {
   display: none;
   cursor: pointer;
+  z-index: 10;
 }
 
 .close-menu p {
   font-size: 3.2rem;
   position: absolute;
   margin: 0;
-  top: 0;
+  top: 1.3rem;
   left: 1.3rem;
+  color: black;
+  z-index: 100;
 }
 
 .logo-desktop a {
@@ -63,10 +66,14 @@ p {
 }
 
 .pages-menu {
-  width: 100%;
+  width: 100vw;
   display: none;
-  height: 80vh;
-  background-color: rgb(234, 234, 234, 0.7);
+  height: 100vh;
+  background-color: rgba(234, 234, 234, 0.9);
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
   border-right: 4px outset #ec5242;
   border-bottom: 2px outset #ec5242;
 }
@@ -487,6 +494,7 @@ footer {
     display: block;
     height: unset;
     border: none;
+    position: unset;
   }
 
   .menu-items {
