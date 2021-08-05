@@ -10,7 +10,7 @@
 
 ## Live Demo Link for Github-Page Branch
 
-![Click Here to view presentation video](https://www.loom.com/share/44ab3ae3582e4eb6aa25ce0dfff240b5)
+[Click Here to view presentation video](https://www.loom.com/share/44ab3ae3582e4eb6aa25ce0dfff240b5)
 
 [Click Here to view live version](https://faizi2500.github.io/Module1-Capstone-Project/)
 ## Built With
