@@ -472,7 +472,7 @@ footer {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .company-name a {
@@ -507,7 +507,7 @@ footer {
 
   .menu-items li {
     display: inline-block;
-    padding: 0 1.25rem;
+    padding: 0;
   }
 
   .company-name {
