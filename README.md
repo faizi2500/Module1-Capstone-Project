@@ -46,7 +46,7 @@ Feel free to check the issues page.
 
 ## Acknowledgments
 
-Hat tip to [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) whose design template was used
+[Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) whose design template was used is used for this project.
 
 ## Show your support
 Give a ⭐️ if you like this project!
